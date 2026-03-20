@@ -1,4 +1,4 @@
-const choiceTheMovie = document.querySelector('.button-start')
+const chooseTheMovie = document.querySelector('.button-start')
 const title = document.querySelector('h1')
 
 
@@ -47,4 +47,4 @@ function draw() {
   setTimeout(() => title.classList.remove('animate'), 300)
 }
 
-choiceTheMovie.addEventListener('click', draw)
+chooseTheMovie.addEventListener('click', draw)
