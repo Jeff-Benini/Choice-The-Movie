@@ -11,7 +11,6 @@ body {
   height: 100%;
 }
 
-/* Fundo */
 .img-background {
   position: fixed;
   top: 0;
@@ -22,7 +21,6 @@ body {
   z-index: -1;
 }
 
-/* Centralizar o conteúdo */
 body {
   display: flex;
   flex-direction: column;
@@ -30,7 +28,6 @@ body {
   align-items: center;
 }
 
-/* Card principal */
 main {
   position: relative;
 
@@ -47,7 +44,6 @@ main {
 
   border-radius: 15px;
 
-  /* 🔥 estilo arcade */
   border: 2px solid rgba(0, 255, 255, 0.4);
   box-shadow:
     0 0 10px rgba(0, 255, 255, 0.3),
@@ -147,17 +143,15 @@ button:hover {
     height: auto;
 
     background: transparent;
-    backdrop-filter: none; /* remove blur */
+    backdrop-filter: none; 
 
     box-shadow: none;
     border: none;
+
   }
 
   main::before {
-    display: none; /* remove o gradiente */
+    display: none; 
   }
 
-  input {
-    margin: 10px;
-  }
 }
