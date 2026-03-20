@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Trajan Pro', sans-serif;
+  outline: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Fundo */
+.img-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Centralizar o conteúdo */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card principal */
+main {
+  position: relative;
+
+  height: 340px;
+  width: 700px;
+  padding: 30px;
+
+  text-align: center;
+  align-items: center;
+
+  background: rgba(10, 0, 30, 0.5);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  border-radius: 15px;
+
+  /* 🔥 estilo arcade */
+  border: 2px solid rgba(0, 255, 255, 0.4);
+  box-shadow:
+    0 0 10px rgba(0, 255, 255, 0.3),
+    0 0 20px rgba(255, 0, 255, 0.2);
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 15px;
+  background: linear-gradient(120deg, #00ffff22, #ff00ff22);
+  z-index: -1;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: transform 0.3s;
+
+  margin-bottom: 5px;
+
+  font-size: 35px;
+  font-weight: 800;
+
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  text-shadow:
+    0 0 10px rgba(255, 0, 0, 0.6),
+    0 0 20px rgba(255, 0, 0, 0.3);
+}
+
+h1.animate {
+  transform: scale(1.2);
+}
+
+.img-movie,
+.img-claquete {
+  height: 40px;
+  width: 40px;
+}
+
+input {
+  margin-top: 5px;
+
+  height: 35px;
+  width: 300px;
+
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+
+  border-radius: 10px;
+  border: 1px solid black;
+
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+button {
+  display: block;
+  margin: 10px auto;
+
+  width: 180px;
+  height: 35px;
+
+  border-radius: 20px;
+
+  font-size: 20px;
+  font-weight: 1000;
+  text-align: center;
+
+  background: linear-gradient(45deg, #ff0000, #ff4d4d);
+  color: white;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+}
+
+@media (max-width: 768px) {
+  main {
+    width: 90%;
+    max-width: 700px;
+    height: auto;
+
+    background: transparent;
+    backdrop-filter: none; /* remove blur */
+
+    box-shadow: none;
+    border: none;
+  }
+
+  main::before {
+    display: none; /* remove o gradiente */
+  }
+
+  input {
+    margin: 10px;
+  }
+}
