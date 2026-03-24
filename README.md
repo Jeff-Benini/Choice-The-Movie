@@ -1,4 +1,4 @@
-<div align="center"> <img src="https://github.com/Jeff-Benini/Choose-The-Movie/blob/main/assets/Logo%20Choose%20The%20Movie.jpg"/>  
+<div align="center" <img src="https://github.com/Jeff-Benini/Choose-The-Movie/blob/main/assets/Logo%20Choose%20The%20Movie.jpg"/>  
 <br>
 <p align="center">
   <a href="#sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
